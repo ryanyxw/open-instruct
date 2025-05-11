@@ -32,6 +32,7 @@ import transformers
 from accelerate import Accelerator, DataLoaderConfiguration
 from accelerate.logging import get_logger
 from accelerate.utils import InitProcessGroupKwargs, set_seed
+from datasets import load_dataset
 from huggingface_hub import HfApi
 from peft import LoraConfig, TaskType, get_peft_model, prepare_model_for_kbit_training
 from torch.utils.data import DataLoader
